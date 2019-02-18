@@ -1,0 +1,52 @@
+.content-info
+{
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2*$line-height-computed;
+    padding-bottom: $line-height-computed;
+    background-color: $gray-darker;
+    color: $gray-lighter;
+
+    .container
+    {
+        .row
+        {
+            &>section
+            {
+                margin-top: $line-height-computed;
+
+                &:first-child
+                {
+                    margin-top: 0;
+                }
+
+                @media all and (min-width:$screen-sm-min)
+                {
+                    &:nth-child(2)
+                    {
+                        margin-top: 0;
+                    }
+                }
+
+                @media all and (min-width:$screen-md-min)
+                {
+                    margin-top: 0;
+                }
+
+                p
+                {
+                    font-size: $font-size-base;
+                }
+
+                .widget
+                {
+                    .widget-title
+                    {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

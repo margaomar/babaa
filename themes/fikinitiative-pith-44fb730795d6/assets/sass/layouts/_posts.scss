@@ -1,0 +1,59 @@
+// General & archive blog
+.hentry
+{
+    margin-bottom: 30px;
+
+    &:last-child
+    {
+        margin-bottom: 0;
+    }
+
+    .featured-image
+    {
+        a
+        {
+            img
+            {
+                &:hover
+                {
+                    opacity: 0.85;
+                }
+            }
+        }
+    }
+
+    header
+    {
+        position: relative;
+
+        .entry-title
+        {
+            margin-top: 0;
+        }
+
+        .published
+        {
+            color: $gray-light;
+        }
+
+        .author
+        {
+            color: $gray-light;
+        }
+
+        .number-comments
+        {
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            color: $gray-light;
+
+            .comments-icon
+            {
+                margin-right: 5px;
+                color: $brand-info;
+                font-size: 1.2em;
+            }
+        }
+    }
+}

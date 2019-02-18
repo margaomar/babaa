@@ -1,0 +1,172 @@
+.cart-page
+{
+    &>.table
+    {
+        thead
+        {
+            th
+            {
+                text-transform: uppercase;
+            }
+        }
+
+        tbody
+        {
+            .cart_item_row
+            {
+                td
+                {
+                    &.cart_image
+                    {
+                        img
+                        {
+                            max-width: 150px;
+                            width: 100%;
+                        }
+                    }
+
+                    .cart_item_update
+                    {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+
+        tfoot
+        {
+            td
+            {
+                text-transform: uppercase;
+                text-align: right;
+            }
+        }
+
+        tr
+        {
+            th,
+            td
+            {
+                &:nth-child(4)
+                {
+                    text-align: right;
+                }
+
+                &:nth-child(5)
+                {
+                    text-align: right;
+                }
+            }
+        }
+
+        @media all and (max-width: $screen-xs-max)
+        {
+            display: block;
+
+            thead
+            {
+                @media all and (max-width: 767px)
+                {
+                    display: none;
+                }
+            }
+
+            tbody,
+            tfoot,
+            tr,
+            th,
+            td
+            {
+                display: block;
+                position: relative;
+            }
+
+            tbody
+            {
+                td
+                {
+                    position: relative;
+                    padding-left: 50%;
+
+                    &:before
+                    {
+                        position: absolute;
+                        content: '';
+                        top: 8px;
+                        left: 0;
+                        width: 45%;
+                        padding-right: 10px;
+                        padding-left: 8px;
+                        white-space: nowrap;
+                        text-align: left;
+                    }
+
+                    &:first-child
+                    {
+                        padding-top: 8px;
+                        padding-left: 8px;
+                        padding-right: 55%;
+                    }
+
+                    &:nth-of-type(2)
+                    {
+                        position: absolute;
+                        top: 0;
+                        border: none;
+                        background-color: transparent;
+                    }
+
+                    &:nth-of-type(3)
+                    {
+                        border: none;
+
+                        &:before
+                        {
+                            top: 14px;
+                            content: 'Cantidad';
+                        }
+
+                        form
+                        {
+                            text-align: right;
+                        }
+                    }
+
+                    &:nth-of-type(4)
+                    {
+                        border: none;
+
+                        &:before
+                        {
+                            content: 'Precio unitario';
+                        }
+                    }
+
+                    &:last-child
+                    {
+                        border: none;
+
+                        &:before
+                        {
+                            content: 'Subtotal';
+                        }
+                    }
+                }
+            }
+
+            tfoot
+            {
+                td
+                {
+                    display: inline-block;
+                    width: 50%;
+
+                    &:first-child
+                    {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

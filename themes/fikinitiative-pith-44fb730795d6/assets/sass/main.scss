@@ -1,0 +1,37 @@
+// Fonts
+@import "_fonts";
+
+// Bootstrap
+@import "_bootstrap.scss";
+
+// Roots
+@import "_global";                   // Base styling & custom mixins
+@import "components/_buttons";       // Button tweaks
+@import "components/_forms";         // Form tweaks
+@import "components/_media";         // WordPress media
+@import "components/_wp-classes";    // WordPress generated classes
+@import "layouts/_general";          // General styling
+@import "layouts/_header";           // Header styling
+@import "layouts/_sidebar";          // Sidebar styling
+@import "layouts/_footer";           // Footer styling
+@import "layouts/_pages";            // Page styling
+@import "layouts/pages/_home";       // Home page styling
+@import "layouts/_posts";            // Post styling
+
+// Pith
+@import "components/_thumbnail-grid";       // General/Store thumbnail styling
+@import "components/_cart-button";          // Cart button styling
+@import "components/_carousel";             // Bootstrap carousel styling
+@import "components/_closing";              // Fik footer stylingfont-awesome
+@import "components/_shortcodes";           // Shortcodes general styling
+@import "components/_widgets";              // Widgets general styling
+@import "components/_comments";             // Comments general styling
+@import "layouts/_widget-areas";            // Fik widget areas styling
+@import "layouts/pages/_post-single";       // Fik post single styling
+@import "layouts/pages/_product-single";    // Fik product page styling
+@import "layouts/pages/_store";             // Store styling
+@import "layouts/pages/_cart";              // Cart page styling
+@import "layouts/pages/_404";               // 404 page styling
+
+// Plugins
+@import "../plugins/wp-flexible-map/_styles.scss";       // Flexible Map

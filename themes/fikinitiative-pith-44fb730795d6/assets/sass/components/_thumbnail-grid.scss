@@ -1,0 +1,66 @@
+.product-preview
+{
+    .product-wrap
+    {
+        .product-state
+        {
+            position: absolute;
+            top: 5px;
+            z-index: 100;
+        }
+
+        &>a
+        {
+            img
+            {
+                width: 100%;
+
+                &:hover
+                {
+                    opacity: 0.85;
+                }
+            }
+        }
+
+        .caption
+        {
+
+            .title
+            {
+                font-size: $font-size-base;
+                margin-top: 0;
+                margin-bottom: 5px;
+                position: relative;
+
+                .product-price
+                {
+                    margin-top: 3px;
+                    display: block;
+
+                    del
+                    {
+                        color: $gray-light;
+
+                        .highPrice
+                        {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .tags
+            {
+                margin: 0;
+
+                span
+                {
+                    a
+                    {
+                        font-size: $font-size-small;
+                    }
+                }
+            }
+        }
+    }
+}

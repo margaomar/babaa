@@ -1,0 +1,33 @@
+#comments
+{
+    margin-bottom: 30px;
+
+    &>h3
+    {
+        margin-bottom: $line-height-computed;
+        margin-top: 2*$line-height-computed;
+
+        .comments-icon
+        {
+            margin-right: 8px;
+        }
+    }
+
+    .comment
+    {
+        .media-body
+        {
+            .published
+            {
+                display: inline-block;
+                margin-bottom: 10px;
+                color: $gray-light;
+            }
+        }
+    }
+}
+
+#respond
+{
+
+}

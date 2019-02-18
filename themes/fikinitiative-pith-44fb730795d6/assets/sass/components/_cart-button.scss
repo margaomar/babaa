@@ -1,0 +1,9 @@
+.cart-container
+{
+    @media all and (max-width: $screen-xs-max)
+    {
+        position: absolute;
+        top: -3px;
+        right: 90px;
+    }
+}

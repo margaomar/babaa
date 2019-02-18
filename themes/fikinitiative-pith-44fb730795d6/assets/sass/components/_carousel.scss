@@ -1,0 +1,107 @@
+.carousel.slide
+{
+    .carousel-indicators
+    {
+
+        li
+        {
+            width: 12px;
+            height: 12px;
+            margin-bottom: 1px;
+            margin-left: 4px;
+            margin-right: 4px;
+
+            &:hover
+            {
+                background-color: #fff;
+            }
+
+            &.active
+            {
+
+            }
+        }
+
+        @media all and (max-width: $screen-xs-max)
+        {
+            display: none;
+        }
+    }
+
+    .carousel-inner
+    {
+        img
+        {
+            width: 100%;
+        }
+
+        .carousel-caption
+        {
+
+            @media all and (max-width: $screen-xs-max)
+            {
+                padding-bottom: 0;
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                p
+                {
+                    font-size: 0.9em;
+                    margin: 0;
+                }
+
+                a
+                {
+                    font-size: 0.8em;
+                    margin: 0;
+                }
+
+                .btn
+                {
+                    padding: 3px 8px;
+                }
+            }
+
+            @media all and (min-width: $screen-sm-min)
+            {
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    .carousel-control
+    {
+        background-image: none;
+
+        span
+        {
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            margin-top: -25px;
+            line-height: 34px;
+            font-size: 100px;
+        }
+
+        &.left
+        {
+            span
+            {
+                left: 0;
+            }
+        }
+
+        &.right
+        {
+            span
+            {
+                right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+// Special titles
+
+.fik-special-title
+{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: $headings-font-weight;
+    margin-bottom: 2 * $line-height-computed;
+    position: relative;
+
+    &:after
+    {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 3px;
+        left: 0;
+        bottom: -12px;
+        background-color: $brand-primary;
+    }
+}
+
+// Latest-posts
+
+.latest-posts
+{
+    .thumbnail
+    {
+        a
+        {
+            img
+            {
+                &:hover
+                {
+                    opacity: 0.85;
+                }
+            }
+        }
+    }
+
+    .caption
+    {
+        text-align: left;
+        position: relative;
+
+        .author
+        {
+            margin: 0;
+            color: $gray-light;
+        }
+
+        .published
+        {
+            color: $gray-light;
+        }
+
+        .number-comments
+        {
+            position: absolute;
+            top: 21px;
+            right: 9px;
+            color: $gray-light;
+
+            .comments-icon
+            {
+                margin-right: 4px;
+                color: $brand-info;
+                font-size: 1.2em;
+            }
+        }
+    }
+}

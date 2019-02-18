@@ -1,0 +1,37 @@
+.widget-area-full
+{
+
+    &.widget-area-top
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &.widget-area-bottom
+    {
+        margin-bottom: 0;
+    }
+
+    &.widget-area-home
+    {
+
+        &.widget-area-home-first
+        {
+            padding: 0;
+        }
+    }
+
+    &.widget-area-contact
+    {
+        padding: 0;
+    }
+
+    .widget
+    {
+
+        .widget-title
+        {
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.featured-image
+{
+    margin-bottom: $line-height-computed;
+    text-align: center;
+
+    img
+    {
+        display: inline;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
