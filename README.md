@@ -18,6 +18,12 @@ You can see this project live going to:
 
 ----
 ## Screenshots
+**Dashboard**
+
+<img src="screenshots/babaa-product-dashboard.png" width="800px">
+
+----
+
 **Home**
 
 <img src="screenshots/home-welcome.jpg" width="800px">
