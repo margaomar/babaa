@@ -47,7 +47,7 @@ You can see this project live going to:
 
 **Blog**
 
-<img src="screenshots/post.jpg" width="800px">
+<img src="screenshots/post .jpg" width="800px">
 
 ----
 
